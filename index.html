@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Online Bookshop" />
+    <script
+      src="https://kit.fontawesome.com/384243f50c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <p class="menu-header">BooKify</p>
+      <section class="menu-container">
+        <section class="menu-search_container">
+          <input type="text" class="menu-search_input" />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </section>
+        <button class="menu-button menu-cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+        <button class="menu-button menu-favorite">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <button class="menu-button menu-user">
+          <i class="fa-solid fa-user"></i>
+        </button>
+      </section>
+    </nav>
+    <article class="carousel">
+      <button class="carousel-button carousel-button_left">
+        <i class="fa-solid fa-less-than"></i>
+      </button>
+      <section class="carousel-track_container">
+        <ul class="carousel-track">
+          <li class="carousel-slide current-slide slide1">
+            <img
+              class="carousel-image"
+              src="Image carousel/image-1.png"
+              alt=""
+              class="current-Image"
+            />
+          </li>
+          <li class="carousel-slide slide2">
+            <img
+              class="carousel-image"
+              src="Image carousel/image-2.png"
+              alt=""
+            />
+          </li>
+          <li class="carousel-slide slide3">
+            <img
+              class="carousel-image"
+              src="Image carousel/image-3.png"
+              alt=""
+            />
+          </li>
+          <li class="carousel-slide slide4">
+            <img
+              class="carousel-image"
+              src="Image carousel/image-4.webp"
+              alt=""
+            />
+          </li>
+          <!--  -->
+        </ul>
+      </section>
+      <button class="carousel-button carousel-button_right">
+        <i class="fa-solid fa-greater-than"></i>
+      </button>
+      <section class="carousel-indicator_container">
+        <button class="carousel-indicator current-indicator"></button>
+        <button class="carousel-indicator"></button>
+        <button class="carousel-indicator"></button>
+        <button class="carousel-indicator"></button>
+      </section>
+    </article>
+    <main>
+      <section class="catergories-container">
+        <section class="catergories-list">
+          <button class="catergories-items">
+            <i class="fa-solid fa-dragon"></i>Fiction
+          </button>
+          <button class="catergories-items">
+            <i class="fa-solid fa-ghost"></i>Horror
+          </button>
+          <button class="catergories-items">
+            <i class="fa-solid fa-heart-pulse"></i>Health
+          </button>
+          <button class="catergories-items">
+            <i class="fa-solid fa-user-secret"></i>Mystery
+          </button>
+          <button class="catergories-items">
+            <i class="fa-solid fa-earth-americas"></i>Geography
+          </button>
+          <button class="catergories-items">
+            <i class="fa-solid fa-brain"></i>Psychology
+          </button>
+          <button class="catergories-items">
+            <i class="fa-solid fa-robot"></i>Technology
+          </button>
+          <button class="catergories-items">
+            <i class="fa-solid fa-hand-holding-dollar"></i>Business
+          </button>
+        </section>
+      </section>
+      <section class="suggested-book">
+        <h1>Suggested Book</h1>
+        <section class="suggested-book_outer-container">
+          <div class="suggested-book_inner-container">
+            <img src="Image carousel/image-2.png" width="80px" height="80px">
+            <ul>
+              <li class="book-name">Harry Potter</li>
+              <li class="book-author">by JK.Rowling</li>
+              <li class="book-rating">⭐⭐⭐⭐</li>
+              <li class="book-price">4.50$</li>
+            </ul>
+          </div>
+          <div class="suggested-book_inner-container">
+            <img src="Image carousel/image-2.png" width="80px" height="80px">
+            Harry Potter
+          </div>
+          <div class="suggested-book_inner-container">
+            <img src="Image carousel/image-2.png" width="80px" height="80px">
+            Harry Potter
+          </div>
+          <div class="suggested-book_inner-container">
+            <img src="Image carousel/image-2.png" width="80px" height="80px">
+            Harry Potter
+          </div>
+          <div class="suggested-book_inner-container">
+            <img src="Image carousel/image-2.png" width="80px" height="80px">
+            Harry Potter
+          </div>
+          <div class="suggested-book_inner-container">
+            <img src="Image carousel/image-2.png" width="80px" height="80px">
+            Harry Potter
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

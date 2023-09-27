@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* FONT */
+  --HEADER-FF: "ADLaM Display", cursive;
+  --MAIN-FF: "Roboto", sans-serif;
+  --HEADER-FS: clamp(0.8rem, calc(1.7vw + 4vh), 2.5rem);
+  --NAV-FS: clamp(0.9rem, calc(1.1vw + 1.3vh), 1.8rem);
+  --MAIN-FS: clamp(0.8rem, 1.2vw, 1.8rem);
+  --CATERGORIES-FS: clamp(0.9rem, calc(4vh + 10vw), 1.8rem);
+  --BOOKNAME-FS:clamp(0.8rem, 1.2vw, 1.8rem);
+  --BOOKAUTHOR-FS:calc(var(--MAIN-FS) - 0.2rem);
+  --BOOKPRICE-FS:clamp(0.8rem, 1.2vw, 1.8rem);
+
+  /* COLOR */
+  --FC: #1e272e;
+  --NAV-FC: whitesmoke;
+  --NAV-BGCOLOR: #2d2f31;
+  --MAIN-BGCOLOR: #f3f3f3;
+  --SUB-BGCOLOR: #fff;
+  --BUTTON-BGCOLOR: #25cf60;
+  --BOOKPRICE-COLOR:#25cf60;
+  --CAROUSEL-CURRENT-INDICATOR-BGCOLOR:#25CF60;
+  --CAROUSEL-BUTTON-COLOR:#25CF60;
+  /* PADDING */
+  --NAV-PADDING-MOBILE: 0.5rem 0.5rem;
+}
+body {
+  min-height: 100vh;
+  font-weight: var(--MAIN-FF);
+  font-size: var(--MAIN-FS);
+  color: var(--FC);
+  background-color: var(--MAIN-BGCOLOR);
+}
+nav {
+  color: var(--NAV-FC);
+  background-color: var(--NAV-BGCOLOR);
+  font-size: var(--NAV-FS);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  align-items: center;
+  padding: var(--NAV-PADDING-MOBILE);
+}
+nav button,
+input {
+  font-size: var(--NAV-FS);
+  background-color: transparent;
+  border: none;
+}
+main{
+
+  width:90%;
+  margin:0 auto;
+}
+
+.menu-header {
+  font-family: var(--HEADER-FF);
+  font-size: var(--HEADER-FS);
+  padding-right: 1rem;
+}
+
+.menu-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu-search_container input {
+  display: none;
+}
+.menu-search_container button {
+  color: var(--NAV-FC);
+}
+.menu-button {
+  color: var(--NAV-FC);
+}
+
+.carousel {
+  position: relative;
+  padding: 0.5rem 0rem;
+  /* background: red; */
+  width: 80vw;
+  height: 28vh;
+  margin: 0 auto;
+}
+.carousel-image {
+  width: 100%;
+  height: 100%;
+}
+.carousel-slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.carousel-track_container {
+  border:2px solid black;
+
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.carousel-track {
+  height: 100%;
+  position: relative;
+  transition: transform 200ms ease-in;
+}
+.carousel-slide {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+.carousel-button {
+  padding: 0 0.5rem;
+  font-size: var(--NAV-FS);
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  color:var(--CAROUSEL-BUTTON-COLOR);
+}
+.carousel-button_left {
+  left: 0;
+  transform: translateX(-100%);
+}
+.carousel-button_right {
+  right: 0;
+  transform: translateX(100%);
+}
+.carousel-indicator_container {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+.carousel-indicator {
+  margin: 0 0.1rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid black;
+
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.current-indicator {
+  background-color:var(--CAROUSEL-CURRENT-INDICATOR-BGCOLOR);
+}
+.catergories-container {
+  margin: 2rem auto;
+  height: 25vh;
+  border: 1px solid rgba(0, 0, 0, 0.128);
+}
+.catergories-list {
+  border-collapse: collapse;
+
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.catergories-items {
+  font-size: var(--MAIN-FS);
+  border: 1px solid rgba(0, 0, 0, 0.128);
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color:#f3f3f3;
+  background-color: #25cf60;
+}
+.catergories-items i {
+  font-size: var(--CATERGORIES-FS);
+  justify-self: center;
+  align-self: center;
+}
+.suggested-book{
+  font-size: var(--MAIN-FS);
+  font-family: var(--MAIN-FF);
+
+}
+.suggested-book_outer-container{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  padding-left:0.2rem;
+  padding-top:1rem;
+  gap:0.5rem;
+  
+}
+.suggested-book_inner-container{
+  overflow: hidden;
+  
+  border:1px solid rgba(0, 0, 0, 0.7);
+
+ display:grid;
+ place-content: center;
+ grid-template-rows:6fr 4fr;
+line-height: 1.5;
+  width:48%;
+  height:180px;
+
+}
+.suggested-book_inner-container img{
+  width:100%;
+  height:100%;
+}
+.suggested-book_inner-container ul{
+  list-style-type: none;
+  text-align: center;
+}
+.book-name{
+  font-size: var(--BOOKNAME-FS);
+  font-weight: 600;
+}
+.book-author{
+  font-size:var(--BOOKAUTHOR-FS);
+  color:rgba(0, 0, 0, 0.7);
+}
+.book-price{
+  color:var(--BOOKPRICE-COLOR);
+}
