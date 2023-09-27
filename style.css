@@ -12,9 +12,9 @@
   --NAV-FS: clamp(0.9rem, calc(1.1vw + 1.3vh), 1.8rem);
   --MAIN-FS: clamp(0.8rem, 1.2vw, 1.8rem);
   --CATERGORIES-FS: clamp(0.9rem, calc(4vh + 10vw), 1.8rem);
-  --BOOKNAME-FS:clamp(0.8rem, 1.2vw, 1.8rem);
-  --BOOKAUTHOR-FS:calc(var(--MAIN-FS) - 0.2rem);
-  --BOOKPRICE-FS:clamp(0.8rem, 1.2vw, 1.8rem);
+  --BOOKNAME-FS: clamp(0.8rem, 1.2vw, 1.8rem);
+  --BOOKAUTHOR-FS: calc(var(--MAIN-FS) - 0.2rem);
+  --BOOKPRICE-FS: clamp(0.8rem, 1.2vw, 1.8rem);
 
   /* COLOR */
   --FC: #1e272e;
@@ -23,9 +23,9 @@
   --MAIN-BGCOLOR: #f3f3f3;
   --SUB-BGCOLOR: #fff;
   --BUTTON-BGCOLOR: #25cf60;
-  --BOOKPRICE-COLOR:#25cf60;
-  --CAROUSEL-CURRENT-INDICATOR-BGCOLOR:#25CF60;
-  --CAROUSEL-BUTTON-COLOR:#25CF60;
+  --BOOKPRICE-COLOR: #25cf60;
+  --CAROUSEL-CURRENT-INDICATOR-BGCOLOR: #25cf60;
+  --CAROUSEL-BUTTON-COLOR: #25cf60;
   /* PADDING */
   --NAV-PADDING-MOBILE: 0.5rem 0.5rem;
 }
@@ -53,10 +53,9 @@ input {
   background-color: transparent;
   border: none;
 }
-main{
-
-  width:90%;
-  margin:0 auto;
+main {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .menu-header {
@@ -100,7 +99,7 @@ main{
   width: 100%;
 }
 .carousel-track_container {
-  border:2px solid black;
+  border: 2px solid black;
 
   overflow: hidden;
   border-radius: 5px;
@@ -127,7 +126,7 @@ main{
   position: absolute;
   top: 50%;
   transform: translateY(50%);
-  color:var(--CAROUSEL-BUTTON-COLOR);
+  color: var(--CAROUSEL-BUTTON-COLOR);
 }
 .carousel-button_left {
   left: 0;
@@ -153,7 +152,7 @@ main{
   background-color: rgba(0, 0, 0, 0.1);
 }
 .current-indicator {
-  background-color:var(--CAROUSEL-CURRENT-INDICATOR-BGCOLOR);
+  background-color: var(--CAROUSEL-CURRENT-INDICATOR-BGCOLOR);
 }
 .catergories-container {
   margin: 2rem auto;
@@ -177,7 +176,7 @@ main{
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color:#f3f3f3;
+  color: #f3f3f3;
   background-color: #25cf60;
 }
 .catergories-items i {
@@ -185,50 +184,47 @@ main{
   justify-self: center;
   align-self: center;
 }
-.suggested-book{
+.suggested-book {
   font-size: var(--MAIN-FS);
   font-family: var(--MAIN-FF);
-
 }
-.suggested-book_outer-container{
-  display:flex;
+.suggested-book_outer-container {
+  display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 
-  padding-left:0.2rem;
-  padding-top:1rem;
-  gap:0.5rem;
-  
+  padding-left: 0.2rem;
+  padding-top: 1rem;
+  gap: 0.5rem;
 }
-.suggested-book_inner-container{
+.suggested-book_inner-container {
   overflow: hidden;
-  
-  border:1px solid rgba(0, 0, 0, 0.7);
 
- display:grid;
- place-content: center;
- grid-template-rows:6fr 4fr;
-line-height: 1.5;
-  width:48%;
-  height:180px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
 
+  display: grid;
+  place-content: center;
+  grid-template-rows: 6fr 4fr;
+  line-height: 1.5;
+  width: 48%;
+  height: 190px;
 }
-.suggested-book_inner-container img{
-  width:100%;
-  height:100%;
+.suggested-book_inner-container img {
+  width: 100%;
+  height: 100%;
 }
-.suggested-book_inner-container ul{
+.suggested-book_inner-container ul {
   list-style-type: none;
   text-align: center;
 }
-.book-name{
+.book-name {
   font-size: var(--BOOKNAME-FS);
   font-weight: 600;
 }
-.book-author{
-  font-size:var(--BOOKAUTHOR-FS);
-  color:rgba(0, 0, 0, 0.7);
+.book-author {
+  font-size: var(--BOOKAUTHOR-FS);
+  color: rgba(0, 0, 0, 0.7);
 }
-.book-price{
-  color:var(--BOOKPRICE-COLOR);
+.book-price {
+  color: var(--BOOKPRICE-COLOR);
 }
