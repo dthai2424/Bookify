@@ -572,79 +572,21 @@ const moveRight = () => {
 };
 nextButton.addEventListener("click", moveRight);
 setInterval(moveRight, 2500);
-// Catergories
-// const fictionCatergories = document
-//   .querySelector(".fiction-Catergories")
-//   .addEventListener("click", (e) => {
-//     const fictionArray = books.map((book) => {
-//       return book.catergories == "fiction";
-//     });
-//   });
-
-// const horrorCatergories = document
-//   .querySelector(".horror-Catergories")
-//   .addEventListener("click", (e) => {
-//     const horrornArray = books.map((book) => {
-//       return book.catergories == "horror";
-//     });
-//   });
-// const healthCatergories = document
-//   .querySelector(".health-Catergories")
-//   .addEventListener("click", (e) => {
-//     const healthArray = books.map((book) => {
-//       return book.catergories == "health";
-//     });
-//   });
-// const mysteryCatergories = document
-//   .querySelector(".mystery-Catergories")
-//   .addEventListener("click", (e) => {
-//     const mysteryArray = books.map((book) => {
-//       return book.catergories == "mystery";
-//     });
-//   });
-// const geographyCatergories = document
-//   .querySelector(".geography-Catergories")
-//   .addEventListener("click", (e) => {
-//     const geographyArray = books.map((book) => {
-//       return book.catergories == "geography";
-//     });
-//   });
-// const psychologyCatergories = document
-//   .querySelector(".psychology-Catergories")
-//   .addEventListener("click", (e) => {
-//     const psychologyArray = books.map((book) => {
-//       return book.catergories == "psychology";
-//     });
-//   });
-// const technologyCatergories = document
-//   .querySelector(".technology-Catergories")
-//   .addEventListener("click", (e) => {
-//     const technologyArray = books.map((book) => {
-//       return book.catergories == "technology";
-//     });
-//   });
-// const businessCatergories = document
-//   .querySelector(".business-Catergories")
-//   .addEventListener("click", (e) => {
-//     const businessArray = books.map((book) => {
-//       return book.catergories == "business";
-//     });
-//   });
 
 // Suggested random book
 const suggestedContainer = document.querySelector(
-  ".suggested-book_outer-container"
+  ".book_outer-container"
 );
-const createRandomSuggestedBook = () => {
+const createRandomBook = (amount) => {
   const set = new Set();
-  while (set.size < 20) {
+  while (set.size < amount) {
     set.add(Math.floor(Math.random() * 29) + 1);
   }
   return Array.from(set);
 };
-const suggestedRandomArray = createRandomSuggestedBook();
+const suggestedRandomArray = createRandomBook(20);
 suggestedRandomArray.forEach((position) => {
-  const html = `<div class="suggested-book_inner-container"><img class='suggested-img' src=${bookArr[position].url} width="100%" height="200px  ">
+  const html = `<div class="book_inner-container"><img class='book-img' src=${bookArr[position].url} width="100%" height="200px  ">
   <ul>
     <li class="book-name">${bookArr[position].name}</li>
     <li class="book-author">by ${bookArr[position].author}</li>

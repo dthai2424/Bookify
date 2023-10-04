@@ -189,7 +189,7 @@ main {
   font-size: var(--MAIN-FS);
   font-family: var(--MAIN-FF);
 }
-.suggested-book_outer-container {
+.book_outer-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -198,7 +198,7 @@ main {
   padding-top: 1rem;
   gap: 0.5rem;
 }
-.suggested-book_inner-container {
+.book_inner-container {
   overflow: hidden;
 
   border: 1px solid rgba(0, 0, 0, 0.7);
@@ -212,11 +212,11 @@ main {
   width: 48%;
   height: 280px;
 }
-.suggested-img{
+.book-img{
   width:100%;
   height: 200px;
 }
-.suggested-book_inner-container ul {
+.book_inner-container ul {
   list-style-type: none;
   text-align: center;
   width: 100%;
